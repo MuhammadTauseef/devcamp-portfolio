@@ -25,7 +25,7 @@ class PortfoliosController < ApplicationController
   end
 
   def update
-        @portfolio_item = Portfolio.find(params[:id])
+    @portfolio_item = Portfolio.find(params[:id])
 
     respond_to do |format|
       if @portfolio_item.update(params.require(:portfolio).permit(:title, :subtitle, :body))
@@ -36,4 +36,9 @@ class PortfoliosController < ApplicationController
       end
     end
   end
+
+  def show
+    @portfolio_item = Portfolio.find(params[:id])
+  end
+
 end
