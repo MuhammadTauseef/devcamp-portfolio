@@ -58,3 +58,4 @@ gem 'friendly_id', '~> 5.2.4' # Note: You MUST use 5.0.0 or greater for Rails 4.
 gem 'devise', '~> 4.6', '>= 4.6.1'
 gem 'bootstrap', '~> 4.3.1'
 gem 'jquery-rails'
+gem 'tauseef_devtool', git: 'https://github.com/MuhammadTauseef/tauseef_devtool'
